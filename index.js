@@ -14,7 +14,7 @@ window.addEventListener("scroll", headerSroll);
 
 
 // =========================  sidebar  ==============================
-
+window.addEventListener("resize", sidebar);
 const sidebarHide = document.querySelector(".sidebar");
 const content = document.querySelector(".content");
 
@@ -25,17 +25,6 @@ function sidebar() {
 		sidebarHide.classList.add('hide');
 	}
 }
-
-function contentMaxWidth() {
-	if (window.innerWidth >= 700) {
-		content.classList.remove('contentMaxWidth');
-	} else {
-		content.classList.add('contentMaxWidth');
-
-	}
-}
-sidebar();
-setTimeout(contentMaxWidth, 100);
 
 
 // =====================================================================

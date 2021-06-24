@@ -105,6 +105,9 @@ body {
 @media (max-width: 700px) {
     .sidebar {
         display: none;
-        transition: 0.25s;
+    }
+    .content {
+        padding: 0;
+        width: 100%;
     }
 }
