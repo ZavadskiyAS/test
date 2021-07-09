@@ -132,3 +132,25 @@ html a {
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+button, 
+button:active, 
+button:focus {
+  outline: none;
+}
+
+a{
+  display: block;
+}

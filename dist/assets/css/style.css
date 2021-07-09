@@ -142,3 +142,39 @@ body {
     font-size: 21px;
     color: black;
 }
+
+.header {
+    width: 1440px;
+    height: 102px;
+}
+
+.container {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 135px;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navItem {
+    padding-top: 44px;
+}
+
+.nav:first-child {
+    padding-left: 331px;
+}
+
+.nav:last-child {
+    padding-right: 269px;
+}
+
+footer {
+    background-color: #2C2C2C;
+}

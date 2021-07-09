@@ -1,0 +1,73 @@
+.projectHome{
+    width: 1440px;
+    height: 829px;
+    padding-left: 135px;
+    padding-right: 135px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+}
+
+.projectHome__text{
+    display: block;
+    width: 100%;
+    margin-right: 122px;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 336px;
+    margin-bottom: 90px;
+}
+.projectHome__span{
+    font-weight: bold;
+    color: #333333;
+}
+.projectHome__img{
+    display: block;
+    // width: 770px;
+    margin: 0;
+    position: relative;
+}
+
+.projectHome__btnImg{
+    font-family: hovesLight, sans-serif;
+    width: 222px;
+    height: 71px;
+    background: #FFFFFF;
+    left: 536px;
+    bottom: -185px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.projectHome__btn{
+    margin-bottom: 90px;
+}
+.projectHome__btnRight{
+    width: 53px;
+    height: 53px;
+    border: 1px solid #F2F2F2
+}
+.projectHome__btnLeft{
+    width: 53px;
+    height: 53px;
+    border: 1px solid #F2F2F2
+}
+
+.counter{
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BDBDBD;
+    width: 141px;
+    margin-right: 20px;
+}
