@@ -1,0 +1,131 @@
+.contacts{
+    width: 1440px;
+    padding: 0 135px;
+}
+.contacts__title{
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: #BDBDBD;
+    margin-bottom: 22px;
+}
+
+.wraper{
+    display: flex;
+}
+
+.contacts__input1{
+    width: 391px;
+    height: 46px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+}
+
+.contacts__input2{
+    width: 391px;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+}
+
+.contacts__input3{
+    width: 391px;
+    height: 46px;
+    margin-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 21px;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+}
+
+.contacts__input4{
+    width: 391px;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+}
+
+.contacts__input5{
+    width: 391px;
+    height: 147px;
+    margin-bottom: 22px;
+    padding-top: 14px;
+    padding-bottom: 116px;
+    padding-left: 21px;
+    font-family: hovesLight, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D
+}
+
+.contacts__img{
+    width: 749px;
+    height: 369px;
+}
+
+.contacts__text{
+    font-family: hovesLight, sans-serif;
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    padding-left: 45px;
+    padding-right: 779px;
+}
+
+.contacts__btn{
+    font-family: hovesLight, sans-serif;
+    color: #FFFFFF;
+    width: 222px;
+    height: 71px;
+    background: #333333;
+    margin-bottom: 120px;
+    font-family: TT Hoves;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
