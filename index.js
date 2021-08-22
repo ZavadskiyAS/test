@@ -79,6 +79,7 @@ headerItem3.addEventListener('click', () => {
     burgerBox2.classList.remove('burgerBoxOpen');
     burgerBox1.classList.remove('burgerBoxOpen');
 })
+
 //================================quest1=================================
 
 button1.addEventListener('click',() => {
