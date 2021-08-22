@@ -264,7 +264,13 @@ button {
   outline: none;
   transition: all 0.2s ease;
   cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
 }
+button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+ }
 
 .block2,.block3,.block4,.block5,.block6{
   display: none;
