@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+.header__menu{
+  width: 26px;
+  height: 39px;
+  object-fit: contain;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.header__menu_band1{
+  background: #909090;
+  height: 2px;
+  width: 26px;
+  margin-bottom: 4px;
+}
+.header__menu_band2{
+  background: #909090;
+  height: 2px;
+  width: 22px;
+  margin-bottom: 4px;
+}
+.header__menu_band3{
+  background: #909090;
+  height: 2px;
+  width: 18px;
+}
+.nav__menu{
+  position: relative;
+  position: fixed;
+  background-color: #FFFFFF;
+  top: 0;
+  left: -100%;
+  min-width: 320px;
+  height: 100%;
+  padding: 0.5rem;
+  transition: 0.4s;
+}
+.nav__close_background{
+  width: 65px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg,#f0f0f0,#fff);;
+}
+
+.nav__title{
+  text-align: center;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  /* background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876); */
+}
+
+.nav__item1{
+  text-align: left;
+  color: #000;
+  text-transform: none;
+  max-width: 250px;
+  width: ;
+}
+
+.nav_txt{
+  height: 0px;
+}
+.show-menu{
+  left: 0;
+}
+.nav__close{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.header__logo{
+  width: 130px;
+  height: 37px;
+}
+header {
+  border-bottom: 2px solid rgba(201, 201, 201, 0.534);
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  padding: 10px 0;
+  margin: 0 5%;
+}
+.container{
+  margin: 30px 15px 0 15px;
+}
+
+.mainImg{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.mainText{
+  margin-bottom: 45px;
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #000;
+}
+
+.dot{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  vertical-align: middle;
+  border: 2px solid #cdced2;
+  margin-top: -13px;
+}
+
+.dot-active1{
+  border: 2px solid rgb(65, 115, 176);
+  transition: all 0.5s;
+  vertical-align: middle;
+}
+.dot-active{
+  background-color: rgb(65, 115, 176);
+  border: 2px solid rgb(65, 115, 176);
+  transition-delay: 0.3s;
+}
+.dot>span{
+  line-height: 27px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.dot-img{
+  display: none;
+}
+.dot-img-active{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 67%;
+  height: auto;
+  transition: all 0.5s;
+  margin-top: 2px;
+  max-width: 100%;
+}
+
+.dots-line{
+  display: inline-block;
+  width: 2rem;
+  height: 0.2rem;
+  background: #c4c4c4;
+  vertical-align: middle;
+  transition: all 0.5s;
+}
+
+.count{
+  color: #cdced2;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.quest-txt {
+  font-size: 1rem;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+}
+.body__wrapper{
+  overflow: hidden;
+}
+.q1{
+  transition: all linear 0.5s;
+}
+
+.quest{
+  text-align: center;
+}
+.quest>div{
+  padding: 0 20px;
+}
+
+button {
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.2;
+  padding: 0;
+  padding: 1.5rem 0;
+  background-color: rgb(65, 115, 176);
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.block2,.block3,.block4,.block5,.block6{
+  display: none;
+  transition-delay: 0.3s;
+}
+
+.questOn{
+  display: block;
+}
+.questOff{
+  display: none;
+}
+.dotsOff{
+  display: none;
+}
+.lineBackground{
+  background: rgb(34, 34, 34);
+  transition-delay: 0.3s;
+}
+
+@media screen and (min-width: 440px ){
+  .nav__menu{
+    padding: 1rem 4rem 3rem 3rem;
+    min-width: 440px;
+  }
+}
