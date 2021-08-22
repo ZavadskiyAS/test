@@ -74,8 +74,7 @@ img {
   top: 0;
   left: -100%;
   min-width: 320px;
-  height: 100%;
-  padding: 0.5rem;
+  height: 100vh;
   transition: 0.4s;
 }
 .nav__close_background{
@@ -89,21 +88,31 @@ img {
 
 .nav__title{
   text-align: center;
-  margin-bottom: 4rem;
   cursor: pointer;
-  /* background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876); */
+  background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876);
+  padding: 18px 15% 18px 0;
+  margin-bottom: 0.5rem;
 }
 
-.nav__item1{
+.nav__item1,.nav__item2,.nav__item3{
   text-align: left;
   color: #000;
   text-transform: none;
   max-width: 250px;
-  width: ;
+  padding: 1rem 1rem 0 1rem;
 }
 
-.nav_txt{
-  height: 0px;
+.burgerBox1,.burgerBox2,.burgerBox3{
+  display: none;
+}
+
+.burgerBox2List{
+  list-style-type: square;
+  padding-left: 30px;
+  margin-bottom: 0.5rem;
+}
+.burgerBoxOpen{
+  display: block;
 }
 .show-menu{
   left: 0;
@@ -268,7 +277,15 @@ button {
 
 @media screen and (min-width: 440px ){
   .nav__menu{
-    padding: 1rem 4rem 3rem 3rem;
     min-width: 440px;
+  }
+  .nav__item1,.nav__item2,.nav__item3{
+    max-width: 440px;
+    padding-right: 15px;
+    padding: 1rem 4rem 0 3rem;
+  }
+  .burgerBox2List{
+    list-style-type: square;
+    padding-left: 40px;
   }
 }

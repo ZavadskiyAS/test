@@ -1,6 +1,12 @@
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close'),      
+      navClose = document.getElementById('nav-close'),
+      navItem1 = document.querySelector('.nav__item1'),
+      navItem2 = document.querySelector('.nav__item2'),
+      navItem3 = document.querySelector('.nav__item3'),
+      burgerBox1 = document.querySelector('.burgerBox1'),
+      burgerBox2 = document.querySelector('.burgerBox2'),
+      burgerBox3 = document.querySelector('.burgerBox3'),      
       dots = document.querySelector('.dots'),
       dot1 = document.querySelector('.dot1'),
       dot2 = document.querySelector('.dot2'),
@@ -43,7 +49,7 @@ const navMenu = document.getElementById('nav-menu'),
       quest6 = document.querySelector('.final');
 
 
-
+// ============================= burger open / close ==================
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
@@ -54,6 +60,23 @@ if(navClose){
         navMenu.classList.remove('show-menu');
     })
 }
+
+//================================ burger list ============================
+navItem1.addEventListener('click', () => {
+    burgerBox1.classList.toggle('burgerBoxOpen');
+    burgerBox2.classList.remove('burgerBoxOpen');
+    burgerBox3.classList.remove('burgerBoxOpen');
+})
+navItem2.addEventListener('click', () => {
+    burgerBox2.classList.toggle('burgerBoxOpen');
+    burgerBox1.classList.remove('burgerBoxOpen');
+    burgerBox3.classList.remove('burgerBoxOpen');
+})
+navItem3.addEventListener('click', () => {
+    burgerBox3.classList.toggle('burgerBoxOpen');
+    burgerBox2.classList.remove('burgerBoxOpen');
+    burgerBox1.classList.remove('burgerBoxOpen');
+})
 //================================quest1=================================
 button1.addEventListener('click',() => {
     quest1.classList.add('questOff');
