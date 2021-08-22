@@ -35,6 +35,7 @@ h6 {
 }
 body {
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -67,7 +68,7 @@ img {
   height: 2px;
   width: 18px;
 }
-.nav__menu{
+.header__menu_box{
   position: relative;
   position: fixed;
   background-color: #FFFFFF;
@@ -77,7 +78,7 @@ img {
   height: 100vh;
   transition: 0.4s;
 }
-.nav__close_background{
+.header__close_background{
   width: 65px;
   height: 100%;
   position: absolute;
@@ -86,24 +87,29 @@ img {
   background: linear-gradient(90deg,#f0f0f0,#fff);;
 }
 
-.nav__title{
+.header__title{
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
   background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876);
   padding: 18px 15% 18px 0;
   margin-bottom: 0.5rem;
+  color: #FFFFFF;
 }
 
-.nav__item1,.nav__item2,.nav__item3{
+.header__item1,.header__item2,.header__item3{
   text-align: left;
   color: #000;
   text-transform: none;
   max-width: 250px;
   padding: 1rem 1rem 0 1rem;
 }
-
+.burgerBoxTitle{
+  font-style: 16px;
+}
 .burgerBox1,.burgerBox2,.burgerBox3{
   display: none;
+  font-size: 13px;
 }
 
 .burgerBox2List{
@@ -117,7 +123,7 @@ img {
 .show-menu{
   left: 0;
 }
-.nav__close{
+.header__close{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -142,14 +148,18 @@ header {
 .container{
   margin: 30px 15px 0 15px;
 }
-
-.mainImg{
+.title{
+  font-size: 1rem;
+  text-align: center;
+}
+.content__img{
   max-width: 100%;
   margin-bottom: 30px;
 }
 
-.mainText{
+.contetn_txt{
   margin-bottom: 45px;
+  font-size: 12px;
 }
 
 .dots{
@@ -177,7 +187,7 @@ header {
   vertical-align: middle;
 }
 .dot-active{
-  background-color: rgb(65, 115, 176);
+  background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876);
   border: 2px solid rgb(65, 115, 176);
   transition-delay: 0.3s;
 }
@@ -244,7 +254,7 @@ button {
   line-height: 1.2;
   padding: 0;
   padding: 1.5rem 0;
-  background-color: rgb(65, 115, 176);
+  background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876);
   border: none;
   display: block;
   margin-left: auto;
@@ -271,15 +281,15 @@ button {
   display: none;
 }
 .lineBackground{
-  background: rgb(34, 34, 34);
+  background: linear-gradient(90deg,#004876,#176ea6,#0082c3,#176ea6,#004876);
   transition-delay: 0.3s;
 }
 
 @media screen and (min-width: 440px ){
-  .nav__menu{
+  .header__menu_box{
     min-width: 440px;
   }
-  .nav__item1,.nav__item2,.nav__item3{
+  .header__item1,.header__item2,.header__item3{
     max-width: 440px;
     padding-right: 15px;
     padding: 1rem 4rem 0 3rem;
@@ -287,5 +297,44 @@ button {
   .burgerBox2List{
     list-style-type: square;
     padding-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px ){
+  .container{
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 30px 15px 0 15px;
+  }
+  .content__wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title{
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  .content__img{
+    max-width: 50%;
+    object-fit: contain;
+  }
+
+  .contetn_txt{
+    max-width: 50%;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 991px ){
+  .container{
+    max-width: 940px;
+  }
+}
+
+@media screen and (min-width: 440px ){
+  .container{
+    max-width: 1179px;
   }
 }

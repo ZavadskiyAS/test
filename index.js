@@ -1,9 +1,9 @@
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close'),
-      navItem1 = document.querySelector('.nav__item1'),
-      navItem2 = document.querySelector('.nav__item2'),
-      navItem3 = document.querySelector('.nav__item3'),
+const headerMenu = document.getElementById('header-menu'),
+      headerToggle = document.getElementById('header-toggle'),
+      headerClose = document.getElementById('header-close'),
+      headerItem1 = document.querySelector('.header__item1'),
+      headerItem2 = document.querySelector('.header__item2'),
+      headerItem3 = document.querySelector('.header__item3'),
       burgerBox1 = document.querySelector('.burgerBox1'),
       burgerBox2 = document.querySelector('.burgerBox2'),
       burgerBox3 = document.querySelector('.burgerBox3'),      
@@ -50,34 +50,37 @@ const navMenu = document.getElementById('nav-menu'),
 
 
 // ============================= burger open / close ==================
-if(navToggle){
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
+
+if(headerToggle){
+    headerToggle.addEventListener('click', () => {
+        headerMenu.classList.add('show-menu');
     })
 }
-if(navClose){
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
+if(headerClose){
+    headerClose.addEventListener('click', () => {
+        headerMenu.classList.remove('show-menu');
     })
 }
 
 //================================ burger list ============================
-navItem1.addEventListener('click', () => {
+
+headerItem1.addEventListener('click', () => {
     burgerBox1.classList.toggle('burgerBoxOpen');
     burgerBox2.classList.remove('burgerBoxOpen');
     burgerBox3.classList.remove('burgerBoxOpen');
 })
-navItem2.addEventListener('click', () => {
+headerItem2.addEventListener('click', () => {
     burgerBox2.classList.toggle('burgerBoxOpen');
     burgerBox1.classList.remove('burgerBoxOpen');
     burgerBox3.classList.remove('burgerBoxOpen');
 })
-navItem3.addEventListener('click', () => {
+headerItem3.addEventListener('click', () => {
     burgerBox3.classList.toggle('burgerBoxOpen');
     burgerBox2.classList.remove('burgerBoxOpen');
     burgerBox1.classList.remove('burgerBoxOpen');
 })
 //================================quest1=================================
+
 button1.addEventListener('click',() => {
     quest1.classList.add('questOff');
     quest2.classList.add('questOn');
@@ -100,6 +103,7 @@ button2.addEventListener('click',() => {
 });
 
 //================================quest2=================================
+
 button3.addEventListener('click',() => {
     quest2.classList.add('questOff');
     quest3.classList.add('questOn');
@@ -129,7 +133,9 @@ button5.addEventListener('click',() => {
     countQuest.innerHTML = '3';
     numberDots2.innerHTML = "";
 });
+
 //================================quest3=================================
+
 button6.addEventListener('click',() => {
     quest3.classList.add('questOff');
     quest4.classList.add('questOn');
@@ -149,6 +155,7 @@ button7.addEventListener('click',() => {
     countQuest.innerHTML = '4';
     numberDots3.innerHTML = "";
 });
+
 //================================quest4=================================
 
 button8.addEventListener('click',() => {
