@@ -117,6 +117,7 @@ img {
 }
 .burgerBoxTitle{
   font-style: 16px;
+  cursor: pointer;
 }
 .burgerBox1,.burgerBox2,.burgerBox3{
   display: none;
