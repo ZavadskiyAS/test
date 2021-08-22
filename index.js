@@ -202,7 +202,7 @@ button11.addEventListener('click',() => {
 //================================quest6=================================
 
 button12.addEventListener('click',() => {
-    quest6.classList.add('questOff');
-    count.innerHTML = ' ';
-    dots.classList.add('dotsOff');
+    // quest6.classList.add('questOff');
+    // count.innerHTML = ' ';
+    // dots.classList.add('dotsOff');
 });
