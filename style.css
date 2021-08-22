@@ -81,6 +81,10 @@ img {
   overflow-y: scroll;
   z-index: 30;
 }
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: #FFFFFF;
+}
 .header__close_background{
   width: 65px;
   height: 100%;
